@@ -1,1 +1,3 @@
-theme: jekyll-theme-slate
+type: git
+repo: https://github.com/ShinnDeng/Genshin-spiral-abyss-analysis.git
+branch: master
