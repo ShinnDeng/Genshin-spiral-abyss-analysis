@@ -3,6 +3,19 @@ body {
   margin: 0px;
 }
 
+table,
+td {
+  border: solid;
+  height: 200px;
+  text-align: center;
+  padding: 20px;
+}
+th {
+  height: 50px;
+  text-align: center;
+  border: solid;
+}
+
 /* div {
   background: gray;
   margin: 0px;
@@ -25,8 +38,21 @@ body {
   box-sizing: border-box;
 }
 
+.avater {
+  width: 70px;
+  border-radius: 16px;
+  background-color: #db904c;
+}
+
+.content {
+  padding: 30px;
+  margin: 10px auto;
+  max-width: 1280px;
+}
+
 .text {
   font-weight: bold;
+  font-size: 15px;
 }
 
 #header-left {
@@ -43,22 +69,35 @@ body {
   background-color: rgb(54, 54, 54);
 }
 
-#content-guide {
+#guide-bar {
   /* for safari */
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
-  padding: 50px;
-  margin: 10px;
-  /* height: 1000px;
-  width: 600px; */
-  /* border-style: solid;
-  border-width: 10px 0px 10px 0px;
-  border-color: #f0f1f5; */
+  top: 0px;
+  padding: 20px;
+  margin-bottom: 10px;
   background-color: white;
-  box-sizing: border-box;
-  background-image: url("./resource/web-image/test.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
+  box-sizing: content-box;
   font: 24px Arial;
+}
+
+#left-content {
+  display: inline-block;
+  /* float: left; */
+  background-color: khaki;
+  max-width: 810px;
+  padding: 20px;
+  font: 20px Arial;
+}
+
+#right-content {
+  /* float: left; */
+  display: inline-block;
+  vertical-align: top;
+  padding: 30px;
+  margin-left: 25px;
+  background-color: grey;
+  width: 360px;
+  height: 1000px;
+  /* overflow: hidden; */
 }
