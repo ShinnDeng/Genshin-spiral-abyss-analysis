@@ -16,6 +16,12 @@ th {
   border: solid;
 }
 
+hr {
+  height: 1px;
+  border-width: 0;
+  color: gray;
+  background-color: gray;
+}
 /* div {
   background: gray;
   margin: 0px;
@@ -28,20 +34,19 @@ th {
 
 .header {
   margin-left: 0px;
-  width: 100%;
+  /* width: 100%; */
   height: auto;
   background-image: url("./resource/web-image/banner-genshin.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   /* border-style: solid;
     border-width: 50px; */
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
-.avater {
-  width: 70px;
-  border-radius: 16px;
-  background-color: #db904c;
+.text {
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .content {
@@ -50,9 +55,19 @@ th {
   max-width: 1280px;
 }
 
-.text {
-  font-weight: bold;
-  font-size: 15px;
+.nav-href {
+  text-decoration: none;
+}
+
+.avater1 {
+  width: 70px;
+  border-radius: 7px;
+  background-color: #db904c;
+}
+.avater2 {
+  width: 70px;
+  border-radius: 7px;
+  background-color: #6a6191;
 }
 
 #header-left {
@@ -69,7 +84,7 @@ th {
   background-color: rgb(54, 54, 54);
 }
 
-#guide-bar {
+#nav-bar {
   /* for safari */
   position: -webkit-sticky;
   position: sticky;
@@ -81,10 +96,16 @@ th {
   font: 24px Arial;
 }
 
+#bar {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
 #left-content {
   display: inline-block;
   /* float: left; */
-  background-color: khaki;
+  /* background-color: khaki; */
   max-width: 810px;
   padding: 20px;
   font: 20px Arial;
@@ -95,7 +116,7 @@ th {
   display: inline-block;
   vertical-align: top;
   padding: 30px;
-  margin-left: 25px;
+  /* padding-left: 50px; */
   background-color: grey;
   width: 360px;
   height: 1000px;

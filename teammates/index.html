@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Celestia-Database</title>
+    <link rel="icon" href="../resource/web-image/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="../script.js"></script>
+</head>
+
+
+<body>
+    <div>
+        <div class="header">
+
+            <a href="https://shinndeng.github.io/Genshin-spiral-abyss-analysis/">
+                <img 
+                    src="../resource/web-image/genshin-anniver.png" 
+                    class="fit-img"
+                    alt="Genshin Impact"
+                    title="Genshin Impact"
+                />
+
+            </a>
+
+            <div id="header-left">
+                <!-- 提供数据输入uid 出alert-->
+                <input type="text" placeholder="Place in your miHoYo uid" />
+                <button type="button" onclick="isSubmit(this)">Submit</button>
+                <!-- 收录数据用静态表示 -->
+                <div class="text" >
+                    Amount of Data-Submitted Players:20591
+                    <br />
+                    ★36 Abyssal Stars Players:6781
+                    <br/>
+                    <!-- hype link -->
+                    <a href="https://drive.youngmoe.com/s/E1Cr?path=%2F">Historical Statistics Data</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="content">
+
+            <div class="text" id="nav-bar">
+                <div id="bar" onclick="isClick(this)">Popular Combos</div>
+                <div id="bar"><a class="nav-href" href="/teammates"> Common Teammates </a></div>
+            </div>
+            
+
+            <div id="left-content">
+                <div>
+
+                    <hr>
+                    <div id="team-combo">
+                        team combo
+                        <table>
+                            <th>First Half + Second Half</th>
+                            <tr>
+                                <td>
+                                    <img class="avater1" src="../resource/character/Character_Hu_Tao_Thumb.png" />
+                                    <img class="avater1" src="../resource/character/Character_Albedo_Thumb.png" />
+                                    <img class="avater1" src="../resource/character/Character_Hu_Tao_Thumb.png" />
+                                    <img class="avater1" src="../resource/character/Character_Hu_Tao_Thumb.png" />
+                                </td>
+                                <td>+</td>
+                                <td>
+                                    <img class="avater1" src="../resource/character/Character_Hu_Tao_Thumb.png" />
+                                    <img class="avater1" src="../resource/character/Character_Albedo_Thumb.png" />
+                                    <img class="avater1" src="../resource/character/Character_Hu_Tao_Thumb.png" />
+                                    <img class="avater1" src="../resource/character/Character_Hu_Tao_Thumb.png" />
+                                </td>
+        
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="text" id="right-content">
+                <p>right-content</p>
+                <div id="notice-board">
+                    notice board 
+                    notice board 
+                    notice board 
+                    notice board 
+                </div>
+                <div id="more">
+                    more
+
+                </div>
+                <div id="update-logs">
+                    update-logs
+                </div>
+                <div id="update-plans">
+                    update plans
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+</html>

@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celestia-Database</title>
+    <title>Static Celestia-Database</title>
+    <link rel="icon" href="./resource/web-image/favicon.ico">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./script.js"></script>
 </head>
 
 
@@ -27,7 +29,7 @@
             <div id="header-left">
                 <!-- 提供数据输入uid 出alert-->
                 <input type="text" placeholder="Place in your miHoYo uid" />
-                <button type="button">Submit</button>
+                <button type="button" onclick="isSubmit(this)">Submit</button>
                 <!-- 收录数据用静态表示 -->
                 <div class="text" >
                     Amount of Data-Submitted Players:20591
@@ -44,57 +46,48 @@
 
         <div class="content">
 
-            <div class="text" id="guide-bar">
-                <div style="display: inline-block;">Recommend team combos</div>
-                <div style="display: inline-block;">Recommend team combos</div>
+            <div class="text" id="nav-bar">
+                <div id="bar" onclick="isClick(this)">Popular Combos</div>
+                <div id="bar"><a class="nav-href" href="/teammates"> Common Teammates </a></div>
             </div>
             
 
             <div id="left-content">
                 <div>
                     <div id="character-select">
-                        Character Select
-                        <img class="avater" src="./resource/character/Character_Hu_Tao_Thumb.png" />
+                        Character Filter
+                        <br/>
+                        <img class="avater1" src="./resource/character/Character_Hu_Tao_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Albedo_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Diluc_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Kazuha_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Jean_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Ganyu_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Eula_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Ayaka_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Zhongli_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Yoimiya_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Xiao_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Venti_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Tartaglia_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Sangonomiya_Kokomi_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Raiden_Shogun_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Qiqi_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Mona_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Klee_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Keqing_Thumb.png" />
+                        <img class="avater1" src="./resource/character/Character_Traveler_Thumb.png" />
+
+                        <br/>
+                        <img class="avater2" src="./resource/character/Character_Barbara_Thumb.png" />
+                        <img class="avater2" src="./resource/character/Character_Fischl_Thumb.png" />
+                        <img class="avater2" src="./resource/character/Character_Diona_Thumb.png" />
+                        <img class="avater2" src="./resource/character/Character_Beidou_Thumb.png" />
+                        <img class="avater2" src="./resource/character/Character_Bennett_Thumb.png" />
 
                     </div>
+                    <hr>
 
-                    <div id="team-combo">
-                        team combo
-                        <table>
-                            <th>First Half + Second Half</th>
-                            <tr>
-                                <td>
-                                    <img class="avater" src="./resource/character/Character_Hu_Tao_Thumb.png" />
-                                    <img class="avater" src="./resource/character/Character_Albedo_Thumb.png" />
-                                    <img class="avater" src="./resource/character/Character_Hu_Tao_Thumb.png" />
-                                    <img class="avater" src="./resource/character/Character_Hu_Tao_Thumb.png" />
-                                </td>
-                                <td>+</td>
-                                <td>
-                                    <img class="avater" src="./resource/character/Character_Hu_Tao_Thumb.png" />
-                                    <img class="avater" src="./resource/character/Character_Albedo_Thumb.png" />
-                                    <img class="avater" src="./resource/character/Character_Hu_Tao_Thumb.png" />
-                                    <img class="avater" src="./resource/character/Character_Hu_Tao_Thumb.png" />
-                                </td>
-        
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img class="avater" src="./resource/character/Character_Hu_Tao_Thumb.png" />
-                                    <img class="avater" src="./resource/character/Character_Albedo_Thumb.png" />
-                                    <img class="avater" src="./resource/character/Character_Hu_Tao_Thumb.png" />
-                                    <img class="avater" src="./resource/character/Character_Hu_Tao_Thumb.png" />
-                                </td>
-                                <td>+</td>
-                                <td>
-                                    <img class="avater" src="./resource/character/Character_Hu_Tao_Thumb.png" />
-                                    <img class="avater" src="./resource/character/Character_Albedo_Thumb.png" />
-                                    <img class="avater" src="./resource/character/Character_Hu_Tao_Thumb.png" />
-                                    <img class="avater" src="./resource/character/Character_Hu_Tao_Thumb.png" />
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
                 </div>
             </div>
             <div class="text" id="right-content">
