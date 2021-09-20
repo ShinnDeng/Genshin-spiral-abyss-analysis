@@ -5,10 +5,10 @@ body {
 
 table,
 td {
-  border: solid;
-  height: 200px;
+  /* border: solid; */
+  /* height: 200px; */
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 th {
   height: 50px;
@@ -46,7 +46,7 @@ hr {
 
 .text {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .content {
@@ -57,6 +57,8 @@ hr {
 
 .nav-href {
   text-decoration: none;
+  color: grey;
+  font-weight: bold;
 }
 
 .avater1 {
