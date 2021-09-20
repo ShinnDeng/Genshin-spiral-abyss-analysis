@@ -65,11 +65,13 @@ hr {
   width: 70px;
   border-radius: 7px;
   background-color: #db904c;
+  max-width: 40%;
 }
 .avater2 {
   width: 70px;
   border-radius: 7px;
   background-color: #6a6191;
+  max-width: 40%;
 }
 
 #header-left {
@@ -107,20 +109,26 @@ hr {
 #left-content {
   display: inline-block;
   /* float: left; */
-  /* background-color: khaki; */
+  background-color: white;
   max-width: 810px;
   padding: 20px;
   font: 20px Arial;
+  min-height: 700px;
 }
 
 #right-content {
-  /* float: left; */
-  display: inline-block;
+  float: right;
+  /* display: inline-block; */
   vertical-align: top;
   padding: 30px;
-  /* padding-left: 50px; */
-  background-color: grey;
+  /* background-color: white; */
   width: 360px;
-  height: 1000px;
+  min-height: 700px;
   /* overflow: hidden; */
+}
+
+#pages {
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
 }
